@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Game">
+
+    <!-- Updated Background ImageView to use the drawable -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menu_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_game" /> <!-- Use src instead of background for image scaling -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Sensor Mode Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_sensor"
+            android:layout_width="wrap_content"
+            android:minWidth="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="@color/orange"
+            android:text="Sensor Mode Normal"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+        <!-- Sensor Mode Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_sensor_hard"
+            android:layout_width="wrap_content"
+            android:minWidth="300dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/orange"
+            android:text="Sensor Mode Hard"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <!-- Button Mode Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_button"
+            android:layout_width="wrap_content"
+            android:minWidth="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_BTN_sensor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/red"
+            android:text="Button Mode Normal"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+        <!-- Button Mode Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_button_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+
+            android:layout_below="@id/menu_BTN_sensor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/red"
+            android:text="Button Mode hard"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <!-- High Scores Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_highScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_BTN_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/yellow"
+            android:text="High Scores"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+    </LinearLayout>
+</RelativeLayout>
